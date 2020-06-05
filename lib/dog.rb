@@ -7,13 +7,14 @@ class Dog
     save
   end
 
-  self.all
+  def self.all
     @@all
   end
 
-  self.print_all
+  def self.print_all
     @@all.each do |name|
       puts name
+    end
   end
 
   def save
