@@ -10,7 +10,13 @@ def initialize(name)
 end
 
 self.all
-  @all
-end 
+  @@all
+end
+
+self.print_all
+  @@all.each do |name|
+    puts name
+  end
+end
 
 end
