@@ -2,20 +2,20 @@ class Dog
 
 @@all = []
 
-def initialize(name)
-  @name = name
-  save
-end
-
-self.all
-  @@all
-end
-
-self.print_all
-  @@all.each do |name|
-    puts name
+  def initialize(name)
+    @name = name
+    save
   end
-end
+
+  self.all
+    @@all
+  end
+
+  self.print_all
+    @@all.each do |name|
+      puts name
+    end
+  end
 
 def save
   @@all << self
